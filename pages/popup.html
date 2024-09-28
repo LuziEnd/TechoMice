@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TechoMice</title>
+  <style>
+    body { width: 300px; padding: 10px; background-color: #272727; color: white; }
+    label { display: block; margin-top: 10px; color: white; }
+    button { border: none; background-color: #3333ff; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    input[type="color"] { width: 100%; height: 30px; border-radius: 0; cursor: pointer; background-color: #464646; border: none; }
+    #notification {
+      display: none;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .footer-text { font-size: 10px; }
+  </style>
+</head>
+<br>
+<img src="https://techolay.net/sosyal/data/assets/logo/techolay-forum-logo.svg" height="50px" width="100px"/>
+  <h1>TechoMice</h1>
+  <p><strong>Techolay Sosyal</strong> Sayfanızı Özelleştirin</p>
+  <label>
+    Header Rengi:
+    <input type="color" id="headerColor">
+  </label>
+  <label>
+    Header Metin Rengi:
+    <input type="color" id="textColor">
+  </label>
+  <label>
+    Sayfa Arka Plan Rengi:
+    <input type="color" id="bodyColor">
+  </label>
+  <label>
+    Metin Rengi:
+    <input type="color" id="pageTextColor">
+  </label>
+  <br>
+  <button id="saveButton">Kaydet</button>
+  <div id="notification">Değişiklikler kaydedildi!</div>
+  <br></br>
+
+  <span class="footer-text">Bu eklenti <strong>luziend</strong> tarafından hazırlandı.</span>
+
+  <script src="../js/popup.js"></script>
+</body>
+</html>

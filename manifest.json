@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "TechoMice",
+  "version": "2024.0.2",
+  "icons": {"128": "images/logo.png"},
+  "description": "Techolay Sosyal Sayfanızı Özelleştiren Araç",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://techolay.net/sosyal/*"
+  ],
+  "action": {
+    "default_popup": "pages/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://techolay.net/sosyal/*"],
+      "js": ["js/content.js"],
+      "css": ["custom-styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  }
+}
